@@ -37,6 +37,8 @@ def get_iss_location():
         # get longitude and latitude
         long = r['iss_position']['longitude']
         lat = r['iss_position']['latitude']
+	logger.info(f"ISS Coordinates → Latitude: {lat}, Longitude: {long}")
+
 
         # log output for visibility
         logger.info("Timestamp: " + dtime)
